@@ -1,0 +1,62 @@
+# Site Settings
+title: "Peily Claud's Academic Space"
+locale: "en-US"
+description: "Personal Academic Website of Peily Claud"
+url: "https://peicloud.github.io"
+baseurl: ""
+repository: "peicloud/peicloud.github.io"
+
+# Author Settings
+author:
+  name: "Peily Claud"
+  avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+  bio: "PhD Researcher in Computational Ecology & Data Science"
+  location: "Shanghai, China"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/peicloud"
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+  - scope:
+      path: "_pages"
+    values:
+      layout: single
+      author_profile: true
+
+# MathJax
+mathjax: true
+
+# Search
+search: true
